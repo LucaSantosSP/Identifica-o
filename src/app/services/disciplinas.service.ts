@@ -1,22 +1,22 @@
 import { Injectable } from '@angular/core';
 
-class Disciplinas {
-  nome: string;
+class Task {
+  title: string;
 }
 
 @Injectable()
 export class DisciplinasService {
-  private disciplinas: Disciplinas[] = [];
+  private tasks: Task[] = [];
 
   constructor() {}
 
-  add(nome: string) {
-    this.disciplinas.push({ nome });
+  add(title: string) {
+    this.tasks.push({ title });
   }
   remove(index: number) {
-    this.disciplinas.splice(index, 1);
+    this.tasks.splice(index, 1);
   }
   getList() {
-    return this.disciplinas;
+    return this.tasks;
   }
 }

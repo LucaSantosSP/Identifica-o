@@ -3,8 +3,13 @@
 <button (click)="disciplinas.add(input.value); input.value = ''">+</button>
 <hr />
 <ul>
-  <li *ngFor="let task of disciplinas.getList(); index as i">
-    {{ disciplinas.nome }}
-    <button (click)="disciplinas.remove(i)">-</button>
+  <li *ngFor="let disciplinas of disciplinas.getList(); index as i">
+    {{ disciplinas.title }}
   </li>
 </ul>
+
+<table>
+  <tr>
+    <th></th>
+  </tr>
+</table>

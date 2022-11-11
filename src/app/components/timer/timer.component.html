@@ -1,2 +1,27 @@
-<h2>TIMER</h2>
-<h3>Timer: {{ timer.getCounter() }}</h3>
+<h2 style="text-align: center"><strong>TIMER</strong></h2>
+<h3 style="text-align: center">Timer: {{ timer.getCounter() }}</h3>
+<div class="input-group mb-3">
+  <input
+    [(ngModel)]="timer.valor"
+    type="number"
+    class="form-control"
+    placeholder="Insira um valor"
+    aria-label="Insira um valor"
+    aria-describedby="button-addon2"
+    style="margin-left: 50px"
+  />
+  <button
+    class="btn btn-outline-secondary"
+    type="button"
+    id="button-addon2"
+    style="background-color: #15181e; color: #F1FFFF; margin-right: 50px"
+    onclick=""
+  >
+    Iniciar
+  </button>
+</div>
+<p
+  style="color: #c25d2c; text-align: center; font-size: 13px; text-decoration:"
+>
+  Seu tempo vai reiniciar sempre que chegar no valor inserido por você.
+</p>

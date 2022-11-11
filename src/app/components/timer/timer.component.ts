@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { TimerService } from '../../services/timer.service';
 
 @Component({
@@ -8,6 +8,7 @@ import { TimerService } from '../../services/timer.service';
 })
 export class TimerComponent implements OnInit {
   constructor(public timer: TimerService) {}
+  iniciarContagem() {}
 
   ngOnInit() {}
 }

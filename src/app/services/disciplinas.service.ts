@@ -1,12 +1,12 @@
 import { Injectable } from '@angular/core';
 
-class Task {
+class Disciplinas {
   nome: string;
 }
 
 @Injectable()
 export class DisciplinasService {
-  private disciplinas: Task[] = [];
+  private disciplinas: Disciplinas[] = [];
 
   constructor() {}
 
